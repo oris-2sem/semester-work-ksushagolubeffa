@@ -1,0 +1,47 @@
+.column{
+    margin: 20px;
+}
+.container {
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn.btn-primary{
+    border-color: #864f39;
+    background-color: #864f39;
+}
+
+.btn.btn-primary:hover {
+    border-color: #864f39;
+    background-color: #864f39;
+}
+
+.btn.btn-primary:active {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn.btn-primary:focus {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+
+.no-border:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.form-control:focus{
+    border: none;
+}

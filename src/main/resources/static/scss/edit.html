@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<#include "new-menu.ftlh">
+<head>
+  <title>Добавить медиаконтент</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/static/css/media-add.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+  h2{
+    margin-top: 20px;
+    color: #3d3d3d;
+  }
+  body {
+    font-family: Bahnschrift, Bahnschrift, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Добавить товар</h2>
+  <div class="alert alert-info alert-dismissable">
+    <a class="panel-close close" data-dismiss="alert">×</a>
+    <i class="fa fa-coffee"></i>
+    Помните, что данный контент будет показан другим пользователям. Будьте уважительны и избегайте нецензурной лексики.
+  </div>
+  <#if isAdmin>
+  <form method="POST" action="/media/add" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="name">Название медиаконтента</label>
+      <input type="text" class="form-control" id="name" placeholder="Введите название медиаконтента" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Описание медиаконтента</label>
+      <textarea class="form-control" id="description" rows="3" placeholder="Введите описание медиаконтента" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="previewImage">Фото для превью</label>
+      <input type="file" class="form-control-file" id="previewImage"required>
+    </div>
+    <div class="form-group">
+      <label for="video">Видео</label>
+      <input type="file" class="form-control-file" id="video" required>
+    </div>
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <button type="submit" class="btn btn-primary">Добавить контент</button>
+  </form>
+  <#else>
+  <form method="POST" action="/media/add" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="name">Название медиаконтента</label>
+      <input type="text" class="form-control" id="name" placeholder="Введите название медиаконтента" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Описание медиаконтента</label>
+      <textarea class="form-control" id="description" rows="3" placeholder="Введите описание медиаконтента" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="previewImage">Фото для превью</label>
+      <input type="file" class="form-control-file" id="previewImage" required>
+    </div>
+    <div class="form-group">
+      <label for="video">Видео</label>
+      <input type="file" class="form-control-file" id="video" required>
+    </div>
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <button type="submit" onclick="setCookie()" class="btn btn-primary">Отправить на рассмотрение</button>
+  </form>
+</#if>
+</div>
+
+<script>
+  function setCookie() {
+    document.cookie = "showAlert=true";
+  }
+</script>
+<!-- Add the Bootstrap JavaScript files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

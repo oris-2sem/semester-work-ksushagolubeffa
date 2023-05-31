@@ -1,0 +1,29 @@
+.btn.btn-primary{
+    border-color: #b06d42;
+    font-family: Bahnschrift, Bahnschrift, sans-serif;
+    background-color: #b06d42;
+    margin-bottom: 20px;
+}
+.btn.btn-primary:hover {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+
+.alert.alert-info.alert-dismissable{
+    border-color: #d0aa90;
+    background-color: #ceab95;
+    color: #ffffff;
+}
+
+.btn.btn-primary:active {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn.btn-primary:focus {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}

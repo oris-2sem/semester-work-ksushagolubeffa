@@ -1,0 +1,32 @@
+.btn.btn-primary{
+    border-color: #b06d42;
+    font-family: Bahnschrift, Bahnschrift, sans-serif;
+    background-color: #b06d42;
+}
+
+.btn.btn-default{
+    border-color: #eeeceb;
+    background-color: #eeeceb;
+    color: #4d4d4d;
+    font-family: Bahnschrift, Bahnschrift, sans-serif;
+}
+
+.alert.alert-info.alert-dismissable{
+    border-color: #d0aa90;
+    background-color: #d2b6a3;
+    color: #ffffff;
+}
+
+body {
+    font-family: Bahnschrift, Bahnschrift, sans-serif;
+}
+
+.container{
+    width: 90%;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+

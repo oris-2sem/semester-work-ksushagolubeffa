@@ -1,0 +1,105 @@
+.dropdown{
+    position: relative;    top:9px}
+.dropdown-menu li {
+    padding-left: 10px;}
+.thumb-dropdown .dropdown-menu > li {
+    position: relative;
+}
+.thumb-dropdown .dropdown-menu > li > a .thumbnail {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    display: none;
+    margin-right: 5px;
+    width: 350px;
+    height: auto;
+    margin-left: 10px;
+}
+.thumb-dropdown.dropdown-menu > li > a:hover .thumbnail {
+    display: block;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: #cb9882;
+}
+.navbar-nav > li > a{
+    background-color: #cb9882;
+    color:white !important;
+    font-size: 20px;
+    font-family: Bahnschrift, sans-serif;
+}
+.dropdown-menu li {
+    padding-left: 20px;}
+.navbar-nav ul li a {
+    font-size: 18px;
+    font-family: Bahnschrift, sans-serif;
+}
+.navbar-nav > li > a:hover {
+    color: #815740 !important;
+}
+.navbar-nav > li > a:active {
+    color: #815740 !important;
+}
+
+.navbar-nav li a {
+    color: #cb9882; /* Set the default text color */
+}
+
+.navbar-nav li a:hover {
+    color: #815740; /* Change the text color to blue when the cursor is hovering over the item */
+}
+
+.navbar-nav li a:active {
+    color: #815740; /* Change the text color to green when the item is clicked */
+}
+
+.new-menu {
+    display: flex;
+    background-color: #cb9882;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #cb9882;
+}
+.navbar-brand{
+    color: white !important;
+    font-family: Bahnschrift, sans-serif;
+}
+
+.navbar-brand:hover{
+    color: #815740 !important;
+}
+
+.btn.btn-primary{
+    border-color: #864f39;
+    background-color: #864f39;
+}
+
+.btn.btn-primary:hover {
+    border-color: #864f39;
+    background-color: #864f39;
+}
+
+.btn.btn-primary:active {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn.btn-primary:focus {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+
+.no-border:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.form-control:focus{
+    border: none;
+}

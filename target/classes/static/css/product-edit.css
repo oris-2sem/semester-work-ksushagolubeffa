@@ -1,0 +1,29 @@
+
+.btn.btn-primary{
+    border-color: #d9a183;
+    background-color: #d9a183;
+    margin-bottom: 10px;
+}
+
+.btn.btn-primary:hover {
+    border-color: #864f39;
+    background-color: #864f39;
+}
+
+.btn.btn-primary:active {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.btn.btn-primary:focus {
+    border-color: #864f39 !important;
+    background-color: #864f39 !important;
+}
+
+.container{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

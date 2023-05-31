@@ -31,18 +31,18 @@ public class ProductRestController {
     }
 
     //all works correct
-//    @GetMapping("/products")
-//    @ResponseBody
-//    public List<ProductResponse> getAllProducts(){
-//        List<Product> productList = productService.getAllProducts();
-//        List<ProductResponse> products = new ArrayList<>();
-//        productList.forEach(product -> {
-//            products.add(new ProductResponse(
-//                    product.getUuid(), product.getName(), product.getDescription(), product.getPrice()
-//            ));
-//        });
-//        return products;
-//    }
+    @GetMapping("/products/rest")
+    @ResponseBody
+    public List<ProductResponse> getAllProducts(){
+        List<Product> productList = productService.getAllProducts();
+        List<ProductResponse> products = new ArrayList<>();
+        productList.forEach(product -> {
+            products.add(new ProductResponse(
+                    product.getUuid(), product.getName(), product.getDescription(), product.getPrice()
+            ));
+        });
+        return products;
+    }
 
     //all works correct
     @GetMapping("/products/{id}/image")

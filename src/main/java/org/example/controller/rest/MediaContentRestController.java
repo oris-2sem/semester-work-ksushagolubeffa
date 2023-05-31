@@ -26,18 +26,18 @@ public class MediaContentRestController {
     private final MediaContentService service;
 
     //all works correct
-//    @PermitAll
-//    @GetMapping("/media")
-//    public List<MediaContentResponse> getAllMediaContents(){
-//        List<MediaContent> contentList = service.findAllContent();
-//        List<MediaContentResponse> list = new ArrayList<>();
-//        contentList.forEach(content -> {
-//            list.add(new MediaContentResponse(
-//                    content.getUuid(), content.getName(), content.getDescription(), content.getUser().getUsername()
-//            ));
-//        });
-//        return list;
-//    }
+    @PermitAll
+    @GetMapping("/media/rest")
+    public List<MediaContentResponse> getAllMediaContents(){
+        List<MediaContent> contentList = service.findAllContent();
+        List<MediaContentResponse> list = new ArrayList<>();
+        contentList.forEach(content -> {
+            list.add(new MediaContentResponse(
+                    content.getUuid(), content.getName(), content.getDescription(), content.getUser().getUsername()
+            ));
+        });
+        return list;
+    }
 
     @GetMapping("/media/{id}/image")
     public ResponseEntity<?> showImage(@PathVariable("id") UUID id) throws IOException {
